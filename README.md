@@ -22,3 +22,10 @@ button on the home screen.
 
 ## GIF of deployment
 ![Demo gif of quiz page deployment](https://github.com/CodyRobbins99/js-knowledge-quiz/blob/master/assets/demo-gif/demo-gif.gif)
+
+## Code Sources:
+
+* The Youtube video "*Build a Quiz App (8-9)*" By James Q Quick were used in crafting functions to store and retrieve data from localstorage 
+using .map .
+
+* The Youtube video "*Build A Quiz App With JavaScript*" by Web Dev Simplified was used in crafting my transition for each quiz element.
