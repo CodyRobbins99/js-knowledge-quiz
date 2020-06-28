@@ -18,9 +18,6 @@
     --button-color: #98AFC5;
     --button-hover-color: #BFDBF7;
 }
-.hidden {
-    display: none;
-}
 
 /* Body Styling */
 body {
@@ -29,12 +26,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--neutral-color);
-}
-body.correct {
-    background-color: var(--correct-color);
-}
-body.incorrect {
-    background-color: var(--incorrect-color);
 }
 
 /* Page Content Styling */
@@ -53,13 +44,14 @@ body.incorrect {
     justify-content: space-between;
     margin-bottom: 35px;
 }
-.top-content a {
+#view-high-scores {
     margin-left: 50px;
-    color: #8599ac;
+    font-weight: bold;
 }
-.top-content text {
+.top-content #timer {
     font-weight: bold;
     margin-right: 50px;
+    margin-left: 50px;
 }
 
 /* Quiz Container Styling */
@@ -116,20 +108,30 @@ body.incorrect {
     border-radius: 5px;
     padding: 10px 30px;
     font-size: 1em;
+    text-align: left;
 }
 .btn:hover {
     background-color: var(--button-hover-color);
     border: 1px solid var(--button-hover-color);
     color: #262b31;
 }
-.btn.correct {
+.btn-correct {
     background-color: var(--correct-color);
     border: 1px solid var(--correct-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1em;
+    text-align: left;
 }
-.btn.incorrect {
+.btn-incorrect {
     background-color: var(--incorrect-color);
     border: 1px solid var(--incorrect-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1em;
+    text-align: left;
 }
+
 /* Start Button Styling */
 .quiz-start {
     margin-left: auto;
@@ -142,6 +144,125 @@ body.incorrect {
     font-weight: bold;
 }
 .start-btn:hover {
+    background-color: var(--button-hover-color);
+    border: 1px solid var(--button-hover-color);
+    color: #262b31;
+}
+.hidden {
+    display: none;
+}
+
+/* End of Quiz Styling */
+.end-quiz {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 50%;
+}
+.end-quiz-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.quiz-wrap-up {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.initials {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.initials-text {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.initials-input {
+    width: 50%;
+    padding: 5px 10px;
+    margin: 8px 10px 8px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.submit-initials {
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.submit-initials:hover {
+    background-color: var(--button-hover-color);
+    border: 1px solid var(--button-hover-color);
+    color: #262b31;
+}
+
+/* Error Text Styling */
+#msg {
+    visibility: hidden;
+    margin-top: 20px;
+    font-weight: 700;
+    height: 1.2em;
+    font-size: 1.2em;
+}
+#msg.success, #msg.error {
+    visibility: visible;
+}
+#msg.success {
+    color: #52b155;
+}
+#msg.error {
+    color: #e6252c;
+}
+
+/* User Scores Styling */
+#user-scores-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    max-width: 50%;
+}
+.user-scores-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.user-scores-list {
+    text-decoration: none;
+}
+#userScoresList {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+.high-score {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.high-score:hover {
+    font-size: 1.5em;
+    background-color: var(--button-hover-color);
+}   
+.go-home-btn {
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.go-home-btn:hover {
     background-color: var(--button-hover-color);
     border: 1px solid var(--button-hover-color);
     color: #262b31;

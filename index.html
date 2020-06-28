@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="page content">
-        <div class="top-content">
-            <a>View high scores</a>
-            <text>Time: <span id="timer">0</span></text>
+        <div class="top-content" id="top-content">
+            <div id="button-div"><button id="view-high-scores" class="btn">View high scores</button></div>
+            <div id="timer-div"><p id="timer"></p></div>
         </div>
+
         <div class="quiz-container">
-            <div class="start-container">
+
+            <div class="start-container" id="start-container">
                 <h1 class="quiz-title"> JavaScript Knowledge Quiz Challenge</h1>
                 <p class="instructions"> Try and answer all of the following JavaScript-related quiz answers within the given time frame. Keep in mind that 
                     incorrect answers will deduct 5 points from your score as well as 5 seconds from the clock. Best of luck!
@@ -22,15 +24,32 @@
             <div id="question-container" class="hidden">
                 <h2 id="question">Question</h2>
                 <div id="answer-buttons" class="btn-grid">
-                    <button class="btn ">1. Answer 1</button>
-                    <button class="btn">2. Answer 2</button>
-                    <button class="btn">3. Answer 3</button>
-                    <button class="btn">4. Answer 4</button>
                 </div>
             </div>
             <div class="quiz-start">
                 <button id="start-btn" class="start-btn btn">Test My Knowledge</button>
             </div>
+        </div>
+        <div id="end-quiz" class="end-quiz hidden">
+            <h2 class="end-quiz-title">All done!</h2>
+            <p class="quiz-wrap-up">Your final score is <span id="final-score"></span>.</p>
+            <div class="initials">
+                <p class="initials-text">Please Enter Your Initials:</p>
+                <form>
+                    <input class="initials-input"
+                        type="text"
+                        id="initials"
+                        placeholder=""
+                    />
+                    <button id="submit-initials" class="submit-initials">Submit</button>
+                </form>
+            </div>
+            <div id="msg"></div>
+        </div>
+        <div id="user-scores-section" class="hidden">
+            <h2 class="user-scores-title">High Scores</h2>
+            <ul id="userScoresList"></ul>
+            <button id="go-home-btn" class="go-home-btn">Go Home</button>
         </div>
     </div>
     <script src="./assets/script.js"></script>
